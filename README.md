@@ -38,9 +38,9 @@ A simple Flask web application for managing personal notes, now powered by Mongo
    
    The `.env` file is already configured with your MongoDB connection string:
    ```
-   MONGODB_URI=mongodb+srv://shroot:shroot@cluster0.mdsa2zb.mongodb.net/
-   SECRET_KEY=hjshjhdjah kjshkjdhjs
-   DATABASE_NAME=notes_app
+   MONGODB_URI=mongodb+srv://user:usrpwd@cluster0.abcderf.mongodb.net/
+   SECRET_KEY=anything
+   DATABASE_NAME=db_name
    ```
 
 4. **Initialize Database**
