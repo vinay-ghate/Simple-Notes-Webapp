@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="card-body text-center py-5">
+        <div class="empty-state">
+          <div class="empty-state-icon">⚠️</div>
+          <h2 class="empty-state-title">Oops! Something went wrong</h2>
+          <p class="empty-state-text mb-4">
+            We encountered an unexpected error. Please try again or contact support if the problem persists.
+          </p>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="/" class="btn btn-primary">
+              <i class="fas fa-home me-2"></i>Go Home
+            </a>
+            <button onclick="history.back()" class="btn btn-secondary">
+              <i class="fas fa-arrow-left me-2"></i>Go Back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
