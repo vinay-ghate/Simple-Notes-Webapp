@@ -12,14 +12,14 @@ Home
       <div class="card mb-5">
         <div class="card-body p-0">
           <ul class="list-group list-group-flush">
-            {% for note in user.notes %}
+            {% for note in notes %}
             <li class="list-group-item d-flex justify-content-between align-items-center py-4">
               <p class="mb-0">
-                <span class="text-muted">{{ note.date }}</span>
+                <span class="text-muted">{{ note.date.strftime('%Y-%m-%d %H:%M') }}</span>
                 <br>
                 {{ note.data }}
               </p>
-              <button type="button" class="btn btn-sm btn-danger" onClick="deleteNote({{ note.id }})">
+              <button type="button" class="btn btn-sm btn-danger" onClick="deleteNote('{{ note.id }}')">
                 Delete
               </button>
             </li>

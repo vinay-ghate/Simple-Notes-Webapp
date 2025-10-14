@@ -1,4 +1,5 @@
 flask
 flask_login
-sqlalchemy
-flask_sqlalchemy
+pymongo
+python-dotenv
+bcrypt
